@@ -1,0 +1,41 @@
+<div class="input-group main-input mb-4">
+
+    <div ngbDropdown class="input-group-prepend">
+
+        <button *ngIf="current_fund" id="dropdown" class="btn" ngbDropdownToggle placement="top" tooltipClass="white-tooltip" [ngbTooltip]="current_fund.name | translate_db">{{ current_fund.name | translate_db | slice:0:14 }}...</button>
+        <button *ngIf="!current_fund" id="dropdown" class="btn loading">
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+        </button>
+        
+        <div ngbDropdownMenu aria-labelledby="dropdown">
+  
+            <button *ngFor="let fund of funds" (click)="selectFund($event)" [value]="fund.id" class="dropdown-item">{{ fund.name | translate_db }}</button>
+  
+        </div>
+    </div>
+
+    <input type="text" class="form-control">
+
+    <div class="input-group-append">
+        <button class="btn btn-search">
+            <fa-icon [icon]="search_icon"></fa-icon>
+        </button>
+    </div>
+
+</div>
+
+<div class="advanced-search">
+    <button [hidden]="advanced_search" (click)="showMenuFilters()" class="btn btn-advanced-search">{{ 'LIBRARY.ADVANCED_SEARCH' | translate }}</button>
+
+    <div [hidden]="!advanced_search" class="menu-filters">
+        
+        <app-search-topics-list (onSelectionChange)="addFilter($event)"></app-search-topics-list>
+        <app-catalogs-list (onSelectionChange)="addFilter($event)"></app-catalogs-list>
+        <app-search-fields-list (onSelectionChange)="addFilter($event)"></app-search-fields-list>
+        <app-doc-language-list (onSelectionChange)="addFilter($event)"></app-doc-language-list>
+
+        <div class="controls">            
+            <button class="btn btn-primary flat" (click)="hideMenuFilters()">{{ 'LIBRARY.COLLAPSE_ADVANCED_SEARCH' | translate }}</button>
+        </div>
+    </div>
+</div>

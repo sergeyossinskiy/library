@@ -1,0 +1,19 @@
+<div class="row center">
+
+    <div class="col">
+  
+      <div ngbDropdown class="d-inline-block">
+  
+        <button id="dropdown" class="btn" ngbDropdownToggle>{{ current_item }}</button>
+  
+        <div ngbDropdownMenu aria-labelledby="dropdown">
+  
+          <button *ngFor="let item of dataList" (click)="selectLanguage($event)" [name]="item" class="dropdown-item">{{ item }}</button>
+  
+        </div>
+  
+      </div>
+  
+    </div>
+  
+</div>

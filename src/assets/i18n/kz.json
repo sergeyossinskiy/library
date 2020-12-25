@@ -1,0 +1,20 @@
+{
+    "KZ": "Қазақша",
+    "RU": "Русский",
+    "EN": "English",
+    "LOGIN": "Кіру",
+    "LOGOUT": "Шығу",
+    "REGISTER": "Тіркелу",
+    "SELECT_ALL": "Барлығын таңдаңыз",
+    "NOT_CHOSEN": "Таңдалған жоқ",
+    "LIBRARY": {
+        "LIBRARY": "Кітапхана",
+        "OF_UALIKHANOV_UNIVERSITY": "Шоқан Уалиханов атындағы университет",
+        "ADVANCED_SEARCH": "кеңейтілген іздеу",
+        "COLLAPSE_ADVANCED_SEARCH": "Жасыру",
+        "SEARCH_TOPICS": "Тақырыптарды іздеу",
+        "CATALOGS": "Каталогтар",
+        "SEARCH_FIELDS": "Іздеу өрісі",
+        "DOC_LANGUAGE": "Құжат тілі"
+    }
+}

@@ -1,0 +1,8 @@
+<app-select-list
+    label="searchTopic"
+    [title]="'LIBRARY.SEARCH_TOPICS' | translate"
+    [list]="topics"
+    [groups]="groups"
+    [selected]="selected"
+    (onSelectionChange)="selectionChange($event)"
+></app-select-list>

@@ -1,0 +1,25 @@
+@import '/src/assets/styles/colors.scss';
+
+:host{
+    display: block;
+    min-height: 450px;
+    padding: 7rem 0 2rem 0;
+    background-image: url('/assets/images/background.jpg');
+    background-size: cover;
+}
+
+section.main{
+    max-width: 630px;
+    margin: 0 auto;
+
+    h1,
+    h2{
+        margin: 0;
+        color: $white-color;
+        text-shadow: 0 4px 10px #00000040;
+    }
+
+    h2{
+        margin-bottom: 1.5rem;
+    }
+}

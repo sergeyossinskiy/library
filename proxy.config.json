@@ -1,0 +1,8 @@
+{
+    "/sso/*": {
+        "target" : "http://means.kgu.kz:80",
+        "secure": false,
+        "logLevel" : "debug",
+        "changeOrigin": true
+    } 
+}

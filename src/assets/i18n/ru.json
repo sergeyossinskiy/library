@@ -1,0 +1,20 @@
+{
+    "KZ": "Қазақша",
+    "RU": "Русский",
+    "EN": "English",
+    "LOGIN": "Вход",
+    "LOGOUT": "Выход",
+    "REGISTER": "Регистрироваться",
+    "SELECT_ALL": "Выбрать всё",
+    "NOT_CHOSEN": "Не выбрано",
+    "LIBRARY": {
+        "LIBRARY": "Библиотека",
+        "OF_UALIKHANOV_UNIVERSITY": "университета имени Шокана Уалиханова",
+        "ADVANCED_SEARCH": "расширенный поиск",
+        "COLLAPSE_ADVANCED_SEARCH": "Скрыть",
+        "SEARCH_TOPICS": "Тематика поиска",
+        "CATALOGS": "Каталоги",
+        "SEARCH_FIELDS": "Поле поиска",
+        "DOC_LANGUAGE": "Язык документа"
+    }
+}

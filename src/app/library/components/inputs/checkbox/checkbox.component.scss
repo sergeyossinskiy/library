@@ -1,0 +1,56 @@
+input{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+div{
+    position: relative;
+    padding-left: 2em;
+    vertical-align: middle;
+    user-select: none;
+    cursor: pointer;
+    margin: 0;
+    color: #000;
+
+    &::before{
+        box-sizing: content-box;
+        content: "";
+        color: #337ab7;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 14px;
+        height: 14px;
+        margin-top: -9px;
+        border: 2px solid #337ab7;
+        text-align: center;
+        transition: .4s;
+    }
+
+    &::after{
+        box-sizing: content-box;
+        content: "";
+        position: absolute;
+        transform: scale(0);
+        transform-origin: 50%;
+        transition: transform .2s ease-out;
+        background-color: transparent;
+        top: 50%;
+        left: 4px;
+        width: 8px;
+        height: 3px;
+        margin-top: -4px;
+        border-style: solid;
+        border-color: #fff;
+        border-width: 0 0 3px 3px;
+        -o-border-image: none;
+        border-image: none;
+        transform: rotate(-45deg) scale(1);
+    }
+}

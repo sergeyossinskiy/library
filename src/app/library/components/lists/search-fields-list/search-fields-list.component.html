@@ -1,0 +1,7 @@
+<app-multiselect-list
+    label="searchFields"
+    [title]="'LIBRARY.SEARCH_FIELDS' | translate"
+    [list]="searchFields"
+    [allSelected]="true"
+    (onSelectionChange)="selectionChange($event)"
+></app-multiselect-list>

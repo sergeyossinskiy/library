@@ -1,0 +1,1 @@
+export { TranslateDbPipe } from './translate-db.pipe';

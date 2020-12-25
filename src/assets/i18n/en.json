@@ -1,0 +1,20 @@
+{
+    "KZ": "Қазақша",
+    "RU": "Русский",
+    "EN": "English",
+    "LOGIN": "Login",
+    "LOGOUT": "Logout",
+    "REGISTER": "Register",
+    "SELECT_ALL": "Select All",
+    "NOT_CHOSEN": "Not chosen",
+    "LIBRARY": {
+        "LIBRARY": "Library",
+        "OF_UALIKHANOV_UNIVERSITY": "Shokan Ualikhanov University",
+        "ADVANCED_SEARCH": "advanced search",
+        "COLLAPSE_ADVANCED_SEARCH": "Hide",
+        "SEARCH_TOPICS": "Search topics",        
+        "CATALOGS": "Catalogs",
+        "SEARCH_FIELDS": "Search field",
+        "DOC_LANGUAGE": "Document language"
+    }
+}

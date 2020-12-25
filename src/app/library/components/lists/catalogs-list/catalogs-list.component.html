@@ -1,0 +1,19 @@
+<!-- <mat-form-field appearance="standart">
+    <mat-label>{{ 'LIBRARY.CATALOGS' | translate }}</mat-label>
+    <mat-select [formControl]="selected" #select multiple>
+        <div class="select-all">
+            <mat-checkbox [(ngModel)]="allSelected"
+                            [ngModelOptions]="{standalone: true}"
+                            (change)="toggleAllSelection($event)">{{ 'SELECT_ALL' | translate }}</mat-checkbox>
+        </div>
+        <mat-option (onSelectionChange)="selectionChange($event)" *ngFor="let catalog of catalogs" [value]="catalog.id">{{ catalog.name | translate_db }}</mat-option>
+    </mat-select>
+</mat-form-field> -->
+
+<app-multiselect-list
+    label="catalogs"
+    [title]="'LIBRARY.CATALOGS' | translate"
+    [list]="catalogs"
+    [selected]="selected"
+    (onSelectionChange)="selectionChange($event)"
+></app-multiselect-list>

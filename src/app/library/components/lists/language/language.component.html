@@ -1,0 +1,19 @@
+<div class="row center">
+
+    <div class="col">
+  
+      <div ngbDropdown class="d-inline-block">
+  
+        <button id="language-list" ngbDropdownToggle>{{ current_language | uppercase | translate }}</button>
+  
+        <div ngbDropdownMenu aria-labelledby="language-list">
+  
+          <button *ngFor="let language of languages" (click)="selectLanguage($event)" [name]="language" class="dropdown-item">{{ language | uppercase | translate }}</button>
+  
+        </div>
+  
+      </div>
+  
+    </div>
+  
+</div>

@@ -1,0 +1,7 @@
+<app-select-list
+    label="docLanguage"
+    [title]="'LIBRARY.DOC_LANGUAGE' | translate"
+    [list]="languages"
+    [selected]="selected"
+    (onSelectionChange)="selectionChange($event)"
+></app-select-list>

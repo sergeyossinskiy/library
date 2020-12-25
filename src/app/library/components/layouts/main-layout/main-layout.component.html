@@ -1,0 +1,5 @@
+<p>main-layout works!</p>
+<button *ngIf="authorized" (click)="logout()">Logout</button>
+<button *ngIf="!authorized" (click)="login()">Login</button>
+<button (click)="showCookie()">ShowCookie</button>
+<p>{{ authorized }}</p>
